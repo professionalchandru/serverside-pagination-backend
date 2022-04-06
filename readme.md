@@ -8,5 +8,9 @@
 
 ### Environment variables
 
-PORT = 5000
-DB_URI = your mongodb cluster url
+* PORT = 5000
+* DB_URI = your mongodb cluster url
+
+### For api reference
+
+* import the postman_collection.json file into postman 

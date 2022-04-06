@@ -1,0 +1,117 @@
+{
+	"id": "9c707010-5856-416d-55a2-3a51710fc260",
+	"name": "serverside pagination",
+	"description": "",
+	"order": [
+		"5f03fcad-a746-a65f-f91b-3dcb76aded39",
+		"ca372db8-c88c-9a41-6c93-b45c1fa66d4e",
+		"5d1cf8ba-138b-bdce-d982-f7b858fb14c4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649267252296,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5d1cf8ba-138b-bdce-d982-f7b858fb14c4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/update/11@email.com",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "9c707010-5856-416d-55a2-3a51710fc260",
+			"data": [],
+			"dataMode": "raw",
+			"name": "update email",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649267296949,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\" : \"nine@email.com\"\n}"
+		},
+		{
+			"id": "5f03fcad-a746-a65f-f91b-3dcb76aded39",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/getalldata?pageNo=1&size=10",
+			"queryParams": [
+				{
+					"key": "pageNo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9c707010-5856-416d-55a2-3a51710fc260",
+			"data": null,
+			"dataMode": "params",
+			"name": "get all data ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649267273317,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ca372db8-c88c-9a41-6c93-b45c1fa66d4e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/addData",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9c707010-5856-416d-55a2-3a51710fc260",
+			"data": [],
+			"dataMode": "raw",
+			"name": "create new data",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649267284709,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\" : \"name22\",\n\t\"email\" : \"22@email.com\"\n}"
+		}
+	]
+}
